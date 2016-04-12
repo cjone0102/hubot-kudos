@@ -29,8 +29,8 @@ module.exports = (robot) ->
     users = robot.brain.usersForFuzzyName(name)
     if users.length is 1
       user = users[0]
-      if user.name isnt name
-        msg.send "Hey #{user.name}, you can't give yourself kudos, not cool :sadpanda:"
+      if user.name is msg.envelope.user.name
+        msg.send "Hey #{user.name}, you can't give yourself kudos! Not cool… :sadpanda:"
       else
         keeper.add user.name
         msg.send "#{user.name} is awesome!"
