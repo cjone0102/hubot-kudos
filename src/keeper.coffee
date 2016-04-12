@@ -15,6 +15,10 @@ class Keeper
     @scores[user]++
     @_saveKudos()
 
+  clear: () ->
+    @scores = {}
+    @_saveKudos()
+
   leaderboard: ->
     leaderboard = for scores, i in @_sortedScores()
       "#{i + 1}: #{scores.user} - #{scores.score}"

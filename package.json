@@ -1,23 +1,14 @@
 {
+  "private": true,
   "name": "hubot-kudos",
-  "version": "0.0.3",
+  "version": "0.0.0",
   "description": "A hubot script for giving people kudos",
-  "main": "index.coffee",
-  "scripts": {
-    "test": "script/test"
-  },
-  "keywords": [
-    "hubot",
-    "hubot-scripts",
-    "karma",
-    "recognition"
-  ],
+  "author": "us@sendwithus.com",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/influitive/hubot-kudos.git"
+    "url": "git://github.com/sendwithus/hubot-kudos.git"
   },
-  "author": "David Mills <dave@1morepx.com>",
-  "license": "MIT",
   "dependencies": {
     "underscore": "^1.7.0"
   },
@@ -27,5 +18,9 @@
     "sinon": "*",
     "sinon-chai": "*",
     "coffee-script": "^1.8.0"
+  },
+  "main": "index.coffee",
+  "scripts": {
+    "test": "script/test"
   }
 }
